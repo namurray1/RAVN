@@ -1,0 +1,357 @@
+/*To Do-change the height of the sections. Get the images to fit within the sections using rows and columns. 
+Leave area for Map, and descript on pet. Add css styling based on Barbs desciption. Make navbar transparent. 
+Make sure to add smooth scrolling to the project. Think about adding a page header instead of a Jumbotron.*/
+
+/*#wrapper {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}*/
+
+/*consider adding max-width: 100% and margin:0 auto if this works*/
+
+html,
+body {
+    height: 100%;
+    /* width: auto;
+    margin: auto; */
+    background-color: #000000;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+div.carousel-caption>p {
+    color: rgb(190, 189, 189);
+    text-align: center;
+}
+
+h2,
+p {
+    color: rgb(190, 189, 189);
+}
+
+h3 {
+    color: rgb(190, 189, 189);
+    text-align: center;
+    font-size: 26px;
+}
+
+/* pet profile cards */
+
+.card-title {
+    color: rgb(0, 0, 0);
+    /* text-align: center; */
+    font-size: 25px
+}
+
+.card-text {
+    color: rgb(0, 0, 0);
+}
+
+
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    line-height: 1;
+    width: 100%;
+    /* object-fit: contain;
+    overflow: hidden; */
+    width: 100%;
+    height: auto;
+}
+
+/* this broke the other images */
+
+/* img>.carousel {
+    object-fit: cover;
+    height: 1500px;
+    width: 1000px;
+} */
+
+/* .panel-body>p {
+    color: rgb(255, 255, 255);
+} */
+
+/* .img-responsive {
+    padding: 0px;
+    height: 100%;
+} */
+
+/* img {
+    max-width: 100%;
+    height: auto;
+} */
+
+/*no scrolling within the navbar when in mobile or tablet view below*/
+
+.navbar-collapse.in {
+    /*overflow: hidden;*/
+    background: rgba(0, 0, 0, 0.8) !important;
+    /*max-height: none !important;
+    height: auto !important;*/
+}
+
+/*navbar is now opaque by using rgba change the last value to affect level of opacity*/
+
+.opaque-navbar {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 10px;
+    /*border-bottom: 60px;*/
+    transition: background-color .5s ease 0s;
+}
+
+.navbar-text>p {
+    text-align: center;
+}
+
+/* Glyphicons */
+
+/* .section1.section2.section3 {
+    background-image: url();
+} */
+
+article {
+    float: right;
+}
+
+/*CSS for handling how the sections scroll. Change the numbers after speaking to team*/
+
+/* #section1 {
+    padding-top: 0px;
+    height: auto;
+    color: #fff;
+    background-color: black;
+}
+
+#section2 {
+    padding-top: 0px;
+    margin-right: 0px;
+    height: auto;
+    color: #fff;
+    background-color: rgb(248, 2, 2);
+}
+
+#section3 {
+    padding-top: 0px;
+    height: auto;
+    color: #fff;
+    background-color: #fff3e0
+}
+
+#section4 {
+    padding-top: 0px;
+    height: auto;
+    color: #fff;
+    background-color: black;
+} */
+
+/* flexbox containers */
+
+/* .flex-container {
+    display: flex; */
+/* flex-direction: row; */
+/* justify-content: auto; */
+/* align-items: center; */
+/* flex-wrap: wrap; */
+/* } */
+
+/* adding padding to about us and mission section */
+
+#ravn,
+#claw {
+    padding: 40px;
+}
+
+#section2 {
+    flex-direction: row-reverse;
+
+}
+
+/* #section3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 40px 0 40px 0;
+} */
+
+/* .au,
+.om {
+    margin: 25px;
+} */
+
+/*First three sections with image and paragraphy*/
+
+/* div.col-sm-6 {
+    width: 50%;
+} */
+
+/* img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: block;
+} */
+
+/*look into this as it may be impacting the background images in the application*/
+/* this is required in order for the scroll spy to work */
+body {
+    position: relative;
+}
+
+.donate-amount-container,
+.card-details-container,
+.personal-details-container,
+.donate-container {
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    background-color: white;
+}
+
+#donatebtn {
+    padding-right: 40px;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+}
+
+p {
+    text-align: left;
+    color: rgb(255, 255, 255);
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    /*padding-left: 10Spx;*/
+}
+
+h5 {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+
+/* CSS for material icons */
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+/* material icons for pet profiles section */
+
+#pet_profiles {
+    margin: 50px;
+}
+
+/* material icons for contact us section */
+
+#contact_us {
+    margin: 50px;
+}
+
+/*this is what was causing the buttons to blow up the page in the panels*/
+
+/*a {
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+}*/
+
+/* .page-head {
+    background-image: url("/images/carousel/puppy2.jpg");
+    background-repeat: no-repeat;
+    
+} */
+
+/*Buttons in the panel*/
+
+/* .btn {
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    background: #3498db;
+    padding: 7px 20px 10px 20px;
+}
+
+.btn:hover {
+    background: #3cb0fd;
+    text-decoration: none;
+} */
+
+/*Properties were being overridden in CSS and Bootstrap, so I had to use !important*/
+
+/* .btn:focus,
+.btn:active {
+    outline: none !important;
+} */
+
+div.panel-footer a {
+    text-decoration: none;
+}
+
+/*media queries*/
+
+@media only screen and (min-width: 768px) {
+    /* .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    } */
+}
+
+/*Set media queries for medium and large devices here*/
+
+/* footer {
+    text-align: center;
+    color: white;
+} */
+
+/* as of 03/05/2018 this is the flex-container section that you are changing to */
+
+/* #footer {
+    text-align: center;
+} */
