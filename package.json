@@ -1,0 +1,19 @@
+{
+  "name": "ravn",
+  "version": "1.0.0",
+  "description": "Rescue Animal Volunteer Network - an application for rescues and volunteers",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/namurray1/RAVN.git"
+  },
+  "author": "Alex Murray",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/namurray1/RAVN/issues"
+  },
+  "homepage": "https://github.com/namurray1/RAVN#readme"
+}
